@@ -1,0 +1,90 @@
+body    {
+background: #9E9E9E;
+}
+
+aside {
+float:left;
+background #ffe4c4;
+width: 25%;
+padding: 2.5%;
+height: 100vh;
+color: #0000000;
+border-right: 5px solid #f4a460;
+}
+
+aside img {
+ width: 90px;
+ float: left;
+}
+
+aside .logo {
+font-size: 30px;
+margin-left:10px;
+font-weight:bold;
+position: relative;
+top: -5px;
+}
+
+aside h3 {
+Margin-top: 50px;
+Font-size: 28px;
+}
+
+aside ul {list-style:none}
+a{text-decoration:none}
+aside ul li{
+color: #000;
+display: block;
+margin-top: 20px;
+transition: transform.6s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+color: #8B0000;
+transform: scale(1.05)
+}
+
+main .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 0 auto;
+   padding: 60px;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p
+{
+
+font-size: 20px;
+margin: 20px auto
+}
+
+main .mb-3{
+    width:30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+form {
+margin-left:0%;
+width: 500px;
+margin-top:50px
+}
+
+.alert-warning {
+    float:left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align:left;
+}
+.News-img{
+Width: 100%;
+
+}
+
+

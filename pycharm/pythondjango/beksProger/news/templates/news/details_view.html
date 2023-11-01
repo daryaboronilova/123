@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.date }}</p>
+    <p>{{ article.full_text }}</p>
+{% if article.photo %}
+
+    <img
+            class="News-img"
+            src="{{ article.photo.url }}">
+    {% else %}
+    <p>Изображение нет ты лох</p>
+{% endif %}
+</div>
+{% endblock %}

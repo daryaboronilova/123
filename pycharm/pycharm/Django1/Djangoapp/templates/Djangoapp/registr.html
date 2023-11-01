@@ -1,0 +1,47 @@
+{% extends 'Djangoapp/layout.html' %}
+{% load static %}
+{% block bok %}{% endblock %}
+
+<link rel="stylesheet" type="text/css" href=registr.css">
+
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+<form>
+  <div class="aaa">
+    <h2>Регистрация</h2>
+    <label for="validationDefault01" class="form-label">Имя</label>
+    <input type="text" class="form-control" id="validationDefault01" value="..." required>
+  </div>
+  <div class="aaa">
+    <label for="validationDefault02" class="form-label">Фамилия</label>
+    <input type="text" class="form-control" id="validationDefault02" value="..." required>
+  </div>
+  <div class="aaa">
+    <label for="validationDefaultUsername" class="form-label">Введите пароль</label>
+    <div class="input-group">
+      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+    </div>
+  </div>
+  <div class="aaa">
+    <label for="validationDefault04" class="form-label">Кто вы?</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Выберите:</option>
+      <option>Студент</option>
+      <option>Преподаватель</option>
+    </select>
+  </div>
+    <div class="aaa">
+    <label for="validationDefault03" class="form-label">Выберите группу или укажите, что вы преподаватель</label>
+    <select class="form-select" id="validationDefault03" required>
+      <option selected disabled value="">Выберите:</option>
+      <option>Преподаватель</option>
+      <option>ПИ-032</option>
+      <option>ПИ-022</option>
+      <option>ПИ-012</option>
+    </select>
+  </div>
+  <div class="aaa">
+    <button class="btn btn-info" type="submit"><a href="{% url 'home' %}">Зарегистрироваться</a></button>
+  </div>
+</form>
+{% endblock %}
