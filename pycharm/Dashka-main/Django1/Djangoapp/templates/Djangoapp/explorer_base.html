@@ -1,0 +1,98 @@
+{% extends 'Djangoapp/layout.html' %}
+{% load static %}
+{% block title %}SmartStudy{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Djangoapp/css/explorer.css' %}">
+{% endblock %}
+{% block content %}
+{% block bok %}
+<div class="header-content">
+    <img class="header-logo" src="{% static 'Djangoapp/img/Logo-fotor-bg-remover-20231010155255.png' %}"
+         alt="Лого">
+    <div class="icons-block">
+        <a class="icon-container" title="Главная" href="{% url 'nachal' %}">
+            <img src="{% static 'Djangoapp/icons/home.svg' %}">
+        </a>
+        <a class="icon-container" title="Лекции" href="{% url 'about' %}">
+            <img src="{% static 'Djangoapp/icons/book.svg' %}">
+        </a>
+        <a class="icon-container" title="Чаты" href="{% url 'chats' %}">
+            <img src="{% static 'Djangoapp/icons/chat.svg' %}">
+        </a>
+        <a class="icon-container" title="Расписание" href="{% url 'contacts' %}">
+            <img src="{% static 'Djangoapp/icons/calendar.svg' %}">
+        </a>
+        <a class="icon-container" title="Контакты" href="{% url 'info' %}">
+            <img src="{% static 'Djangoapp/icons/contact.svg' %}">
+        </a>
+    </div>
+    <div class="icons-block">
+        <a class="icon-container" title="Выход" href="{% url 'home' %}">
+            <img src="{% static 'Djangoapp/icons/exit.svg' %}">
+        </a>
+        <a class="icon-container" title="Профиль" href="{% url 'profile' %}">
+            <img src="{% static 'Djangoapp/icons/user.svg' %}">
+        </a>
+    </div>
+</div>
+{% endblock %}
+    <div class="explorer-content" style="background-image: url('{% static 'Djangoapp/img/background.png' %}">
+        <div class="empty"></div>
+        <div class="explorer-container">
+            <div class="explorer-title">
+                {% block explorer-title %}Предметы{% endblock %}
+            </div>
+            <div class="explorer">
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>Интернет-технологии</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>УИП</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ПОЭИС</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ТЭТ</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ИЭНИС</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ПЭП</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>Интернет-технологии</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>УИП</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ПОЭИС</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ТЭТ</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ИЭНИС</p>
+                </a>
+                <a href="#" class="explorer-card">
+                    <img src="{% static 'Djangoapp/icons/folder.svg' %}" alt="folder">
+                    <p>ПЭП</p>
+                </a>
+            </div>
+        </div>
+        <div class="empty"></div>
+    </div>
+{% endblock %}
